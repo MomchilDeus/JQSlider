@@ -1,0 +1,67 @@
+body {
+  margin: 0;
+  animation: fadein 2s;
+  font-size: 1em;
+}
+
+/* basic container */
+.container {
+  margin: 50px auto;
+  min-height: 75vh;
+  width: 80%;
+  position: relative;
+  font-size: 1vw;
+}
+
+/* style background and background-image */
+.background {
+  margin-top: 5vh;
+  border-radius: 10px;
+  height: 75vh;
+  width: 100%;
+  background-image: url("https://static.pexels.com/photos/220421/pexels-photo-220421.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+/* style arrows */
+.fa-arrow-left, .fa-arrow-right {
+  min-height: 2vh;
+  position: absolute;
+  bottom: calc(50% - 23px);
+  padding: 15px;
+  background: #f0f0f0;
+  border-radius: 10px;
+  cursor: pointer;
+  z-index: 1000;
+  font-size: 50px;
+}
+.fa-arrow-right {
+  right: -1.5vw;
+}
+
+.fa-arrow-left {
+  left: -1.5vw;
+}
+
+/* explain the slowness */
+.note, .api {
+  position: absolute;
+  bottom: 10vh;
+  width: 100%;
+  text-align: center;
+  color: #666;
+}
+
+/* mention API */
+.api {
+  bottom: 0;
+  opacity: 0.5;
+  font-style: italic;
+  font-size: 0.8em;
+}
+
+@keyframes fadein {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
